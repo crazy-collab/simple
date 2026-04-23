@@ -79,12 +79,11 @@
 <script>
   window.addEventListener('load', function() {
     window.botpress.on('ready', function() {
-      // updateUser ke zariye data seedha User profile mein jayega
+      // 'data' ki jagah 'userData' use karna hai (jaise screenshot mein hai)
       window.botpress.updateUser({
-        data: {
-          userTier: "premium",   // Pehle ye subscriptionTier tha
-          msgCredits: 50,        // Pehle ye userCredits tha
-          userId: "user_123"
+        userData: { 
+          userTier: "premium",  // Exact wahi naam jo studio mein hain
+          msgCredits: 50
         }
       });
     });
